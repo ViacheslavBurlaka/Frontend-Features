@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 153, 0.3);
+    position: relative;
+}
+
+.container {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 6px solid white;
+    position: relative;
+}
+
+.marks {
+    height: 158px;
+    width: 3px;
+    border-top: 12px solid white;
+    border-radius: 10000px;
+    padding: 4px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.marks:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.marks:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.marks:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.marks:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.marks:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(150deg);
+}
+
+.marks:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.marks:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(210deg);
+}
+
+.marks:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(240deg);
+}
+
+.marks:nth-child(9) {
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.marks:nth-child(10) {
+    transform: translate(-50%, -50%) rotate(300deg);
+}
+
+.marks:nth-child(11) {
+    transform: translate(-50%, -50%) rotate(330deg);
+}
+
+.hours-hand,
+.minutes-hand,
+.seconds-hand {
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 25%) rotate(0deg);
+    transform-origin: 50% 75%;
+    border-radius: 10000px;
+}
+
+.hours-hand {
+    width: 6px;
+}
+
+.minutes-hand {
+    width: 3px;
+}
+
+.seconds-hand {
+    width: 2px;
+}
+
+.hours-hand div,
+.minutes-hand div,
+.seconds-hand div {
+    width: 100%;
+    border-radius: 10000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hours-hand div {
+    height: 72px;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.minutes-hand div {
+    height: 80px;
+    margin-top: 7px;
+    background-color: white;
+}
+
+.seconds-hand div {
+    height: 100%;
+    margin-top: 0;
+    background-color: white;
+}

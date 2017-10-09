@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konami Code</title>
+</head>
+<body>
+<script src="https://www.cornify.com/js/cornify.js"></script>
+
+<script>
+    const secretCode = "konami";
+    const pressed = [];
+
+
+    const checkSequence = (e) => {
+        pressed.push(e.key);
+        pressed.splice(-secretCode - 1, pressed.length - secretCode.length);
+        console.log(pressed);
+
+        if(pressed.join("").includes(secretCode)){
+            console.log('You are win!!!');
+            cornify_add();
+        }
+    };
+
+    window.addEventListener('keyup', checkSequence);
+
+</script>
+
+</body>
+</html>

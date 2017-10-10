@@ -6,3 +6,4 @@
 - CSS Variables
 - Slide in on Scroll
 - Konami Code
+- Sticky Navigation
